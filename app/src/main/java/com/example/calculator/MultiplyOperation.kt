@@ -1,16 +1,9 @@
 package com.example.calculator
 
-class MultiplyOperation(_a: String, _b: String) {
-    private var a:Int = _a.toInt()
-    private var b:Int = _b.toInt()
-    private var answer:Int = 0
+class MultiplyOperation(_operation:String, _a: String, _b: String) : Calculator(_operation, _a, _b) {
 
-//    init {
-//        println("첫 번째 숫자를 입력해주세요.")
-//    }
-
-    fun multiply() {
-        answer = a * b
+    override fun doOperation() {
+        answer = a.toInt() * b.toInt()
         println("${a}와 ${b}의 곱셈 결과는")
         println("$answer 입니다.")
     }
