@@ -16,17 +16,29 @@ fun main(){
             val addOperation = AddOperation(a, b)
             addOperation.add()
         }
-        "뺄셈" -> print("")
-        "곱셈" -> print("")
-        "나눗셈" -> print("")
+        "뺄셈" -> {
+            println("첫 번째 숫자를 입력해주세요.")
+            val a = readln()
+            println("두 번째 숫자를 입력해주세요.")
+            val b = readln()
+            val substaractOperation = SubstractOperation(a, b)
+            substaractOperation.substract()
+        }
+        "곱셈" -> {
+            println("첫 번째 숫자를 입력해주세요.")
+            val a = readln()
+            println("두 번째 숫자를 입력해주세요.")
+            val b = readln()
+            val multiplyOperation = MultiplyOperation(a, b)
+            multiplyOperation.multiply()
+        }
+        "나눗셈" -> {
+            println("첫 번째 숫자를 입력해주세요.")
+            val a = readln()
+            println("두 번째 숫자를 입력해주세요.")
+            val b = readln()
+            val divideOperation = DivideOperation(a, b)
+            divideOperation.divide()
+        }
     }
-
-//    fun example(value) {
-//        return when (value) {
-//            조건부 -> 실행코드
-//            조건부 -> 실행코드
-//            조건부 -> 실행코드
-//            else -> 0
-//        }
-//    }
 }
